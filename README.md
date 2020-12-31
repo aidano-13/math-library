@@ -2,6 +2,14 @@
 
 This is a math library written in Java. As of right now, it is not very extensive, but with open-source I hope that this repository will grow.
 
+# Future Goals
+
+ 1. Geometric Functions
+ 2. Linear Algebra
+ 3. Data Structures
+ 4. Algorithms
+ 5. ETC.
+
 
 # Files
 
