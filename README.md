@@ -1,5 +1,5 @@
-# java-math-library
-A# Java Math Library
+# math-library
+
 This is a math library written in Java. As of right now, it is not very extensive, but with open-source I hope that this repository will grow.
 
 
