@@ -41,6 +41,19 @@ public class LinearEquation implements Equation {
 		}
 	}
 
+	public static LinearEquation pointsToLine(Point a, Point b) {
+		float x1 = a.x;
+		float y1 = a.y;
+		float x2 = b.x;
+		float y2 = b.y;
+
+		float m = (y2 - y1) / (x2 - x1);
+
+		float b = y1 - m * x1;
+
+		return new LinearEquation(m, b);
+	}
+
 	public float m;
 	public float b;
 
