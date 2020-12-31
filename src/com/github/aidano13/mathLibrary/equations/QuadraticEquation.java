@@ -2,6 +2,7 @@ package com.github.aidano13.mathLibrary.equations;
 
 import com.github.aidano13.mathLibrary.errors.ImaginaryAnswerException;
 import com.github.aidano13.mathLibrary.errors.InadequateAmountOfNumbers;
+import com.github.aidano13.mathLibrary.geometry.Point;
 
 public class QuadraticEquation implements Equation {
 
@@ -13,6 +14,39 @@ public class QuadraticEquation implements Equation {
 			float y2 = points[1][1];
 			float x3 = points[2][0];
 			float y3 = points[2][1];
+
+			float A1 = -(x1 * x1) + (x2 * x2);
+			float B1 = -x1 + x2;
+			float D1 = -y1 + y2;
+
+			float A2 = -(x2 * x2) + (x3 * x3);
+			float B2 = -x2 + x3;
+			float D2 = -y2 + y3;
+
+			float B_MULTIPLIER = -(B2 / B1);
+
+			float A3 = B_MULTIPLIER * A1 + A2;
+			float D3 = B_MULTIPLIER * D1 + D2;
+
+			float a = D3 / A3;
+			float b = (D1 - A1 * a) / B1;
+			float c = y1 - (a * x1 * a * x1) - b * x1;
+
+			return new QuadraticEquation(a, b, c);
+		} else {
+			throw new InadequateAmountOfNumbers(
+					String.format("Expected three or more points, instead found %o", points.length));
+		}
+	}
+
+	public static Equation pointsToLine(Point[] points) throws InadequateAmountOfNumbers {
+		if (points.length >= 3) {
+			float x1 = points[0].x;
+			float y1 = points[0].y;
+			float x2 = points[1].x;
+			float y2 = points[1].y;
+			float x3 = points[2].x;
+			float y3 = points[2].y;
 
 			float A1 = -(x1 * x1) + (x2 * x2);
 			float B1 = -x1 + x2;

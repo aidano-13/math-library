@@ -1,6 +1,7 @@
 package com.github.aidano13.mathLibrary.equations;
 
 import com.github.aidano13.mathLibrary.errors.InadequateAmountOfNumbers;
+import com.github.aidano13.mathLibrary.geometry.Point;
 
 public class LinearEquation implements Equation {
 
@@ -10,6 +11,24 @@ public class LinearEquation implements Equation {
 			float y1 = points[0][1];
 			float x2 = points[1][0];
 			float y2 = points[1][1];
+
+			float m = (y2 - y1) / (x2 - x1);
+
+			float b = y1 - m * x1;
+
+			return new LinearEquation(m, b);
+		} else {
+			throw new InadequateAmountOfNumbers(
+					String.format("Expected two or more points, instead found %o", points.length));
+		}
+	}
+
+	public static Equation pointsToLine(Point[] points) throws InadequateAmountOfNumbers {
+		if (points.length >= 2) {
+			float x1 = points[0].x;
+			float y1 = points[0].y;
+			float x2 = points[1].x;
+			float y2 = points[1].y;
 
 			float m = (y2 - y1) / (x2 - x1);
 
