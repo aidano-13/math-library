@@ -29,13 +29,7 @@ public class LinearEquation implements Equation {
 	
 	@Override
 	public String toString() {
-		if (b == 0) {
-			return String.format("y = %fx", m);
-		} else if (b < 0) {
-			return String.format("y = %fx -  %f", m, b * -1);
-		} else {
-			return String.format("y = %fx + %f", m, b);
-		}
+		return String.format("y = %fx + %f", m, b);
 	}
 
 	@Override
