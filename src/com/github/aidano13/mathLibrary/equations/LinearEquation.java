@@ -11,6 +11,16 @@ public class LinearEquation implements Equation {
 		this.m = m;
 		this.b = b;
 	}
+	
+	public LinearEquation(float m) {
+		this.m = m;
+		this.b = 0;
+	}
+	
+	public LinearEquation() {
+		this.m = 0;
+		this.b = 0;
+	}
 
 	@Override
 	public float get(float x) {
