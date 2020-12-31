@@ -93,11 +93,11 @@ public class QuadraticEquation implements Equation {
 		float A3 = B_MULTIPLIER * A1 + A2;
 		float D3 = B_MULTIPLIER * D1 + D2;
 
-		float a = D3 / A3;
-		float b = (D1 - A1 * a) / B1;
-		float c = y1 - (a * x1 * a * x1) - b * x1;
+		float A = D3 / A3;
+		float B = (D1 - A1 * A) / B1;
+		float C = y1 - (A * x1 * A * x1) - B * x1;
 
-		return new QuadraticEquation(a, b, c);
+		return new QuadraticEquation(A, B, C);
 	}
 
 	public float a;
