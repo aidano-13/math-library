@@ -72,13 +72,13 @@ public class QuadraticEquation implements Equation {
 		}
 	}
 
-	public static Equation pointsToLine(Point a, Point b, Point c) {
-		float x1 = a.x;
-		float y1 = a.y;
-		float x2 = b.x;
-		float y2 = b.y;
-		float x3 = c.x;
-		float y3 = c.y;
+	public static Equation pointsToLine(Point _a, Point _b, Point _c) {
+		float x1 = _a.x;
+		float y1 = _a.y;
+		float x2 = _b.x;
+		float y2 = _b.y;
+		float x3 = _c.x;
+		float y3 = _c.y;
 
 		float A1 = -(x1 * x1) + (x2 * x2);
 		float B1 = -x1 + x2;
@@ -93,11 +93,11 @@ public class QuadraticEquation implements Equation {
 		float A3 = B_MULTIPLIER * A1 + A2;
 		float D3 = B_MULTIPLIER * D1 + D2;
 
-		float A = D3 / A3;
-		float B = (D1 - A1 * A) / B1;
-		float C = y1 - (A * x1 * A * x1) - B * x1;
+		float a = D3 / A3;
+		float b = (D1 - A1 * a) / B1;
+		float c = y1 - (a * x1 * a * x1) - b * x1;
 
-		return new QuadraticEquation(A, B, C);
+		return new QuadraticEquation(a, b, c);
 	}
 
 	public float a;
