@@ -6,9 +6,10 @@ This is a math library written in Java. As of right now, it is not very extensiv
 
  1. Geometric Functions
  2. Linear Algebra
- 3. Data Structures
- 4. Algorithms
- 5. ETC.
+ 3. Statistic Functions.
+ 4. Data Structures
+ 5. Algorithms
+ 6. ETC.
 
 
 # Files
