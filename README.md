@@ -1,6 +1,6 @@
 # math-library
 
-This is a math library written in Java. As of right now, it is not very extensive, but with open-source I hope that this repository will grow.
+This is a math library written in Java. As of right now, it is not very extensive, but with open-source I hope that this repository will grow. I ask that if you enjoy this repository or wish to contribute, to star it, so more people can view it.
 
 # Future Goals
 
