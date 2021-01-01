@@ -137,4 +137,17 @@ public class QuadraticEquation implements Equation {
 
 		return new float[] { x1, x2 };
 	}
+
+	public Point[] getZeroPoints() throws ImaginaryAnswerException {
+		boolean isImaginary = b * b - (4 * a * c) < 0;
+
+		if (isImaginary) {
+			throw new ImaginaryAnswerException("");
+		}
+
+		float x1 = (b + (float) Math.sqrt((float) b * b - (4 * a * c))) / (2 * a);
+		float x2 = (b - (float) Math.sqrt((float) b * b - (4 * a * c))) / (2 * a);
+
+		return new Point[] { new Point(x1, 0), new Point(x2, 0) };
+	}
 }
