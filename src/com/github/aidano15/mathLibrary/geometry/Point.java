@@ -1,4 +1,4 @@
-package com.github.aidano7.mathLibrary.geometry;
+package com.github.aidano15.mathLibrary.geometry;
 
 public class Point {
 

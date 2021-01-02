@@ -1,7 +1,7 @@
-package com.github.aidano7.mathLibrary.equations;
+package com.github.aidano15.mathLibrary.equations;
 
-import com.github.aidano7.mathLibrary.errors.InadequateAmountOfNumbers;
-import com.github.aidano7.mathLibrary.geometry.Point;
+import com.github.aidano15.mathLibrary.errors.InadequateAmountOfNumbers;
+import com.github.aidano15.mathLibrary.geometry.Point;
 
 public class LinearEquation implements Equation {
 

@@ -1,4 +1,4 @@
-package com.github.aidano7.mathLibrary.equations;
+package com.github.aidano15.mathLibrary.equations;
 
 public interface Equation {
 

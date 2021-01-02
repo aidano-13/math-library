@@ -1,4 +1,4 @@
-package com.github.aidano7.mathLibrary.statistics;
+package com.github.aidano15.mathLibrary.statistics;
 
 public class Statistics {
 

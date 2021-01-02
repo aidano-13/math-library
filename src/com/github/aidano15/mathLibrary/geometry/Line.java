@@ -1,6 +1,6 @@
-package com.github.aidano7.mathLibrary.geometry;
+package com.github.aidano15.mathLibrary.geometry;
 
-import com.github.aidano7.mathLibrary.equations.LinearEquation;
+import com.github.aidano15.mathLibrary.equations.LinearEquation;
 
 public class Line {
 
