@@ -1,8 +1,8 @@
-package com.github.aidano13.mathLibrary.equations;
+package com.github.aidano7.mathLibrary.equations;
 
-import com.github.aidano13.mathLibrary.errors.ImaginaryAnswerException;
-import com.github.aidano13.mathLibrary.errors.InadequateAmountOfNumbers;
-import com.github.aidano13.mathLibrary.geometry.Point;
+import com.github.aidano7.mathLibrary.errors.ImaginaryAnswerException;
+import com.github.aidano7.mathLibrary.errors.InadequateAmountOfNumbers;
+import com.github.aidano7.mathLibrary.geometry.Point;
 
 public class QuadraticEquation implements Equation {
 
